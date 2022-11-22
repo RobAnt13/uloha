@@ -1,23 +1,25 @@
-const house = {
-    windows: 4,
-    doors: 1,
-    color: "white",
-    height: 50
+// Callback funkcia = funkcia ako parameter inej funkcie
+
+
+/*
+function y(nejakeCislo: number){
+    console.log(nejakeCislo)
+}
+*/
+
+
+const y = (nejakeCislo) => console.log(nejakeCislo)
+y(10)
+y(90)
+
+function sum(n1: number, n2: number, callBackFun: (n3: number) => void){
+    const result = n1 + n2
+    callBackFun(result)
 }
 
-const house2 = {
-    windows: 8,
-    doors: 5,
-    color: "red",
-    height: 80
-}
+sum(5, 30, (nejakeCislo) => console.log(nejakeCislo))
 
-function aboutHouse(myObject){
-    console.log("This house have " + house.windows + " windows. Number of doors is " + house.doors + ". Color of house is " + house.color + ". Height of house is " + house.height + " meters.")
-    console.log(`This house have ${myObject.windows} windows. Number of doors is ${myObject.doors}. Color of the house is ${myObject.color}. Height of house is ${myObject.height} meters.`)
-}
 
-aboutHouse(house)
-aboutHouse(house2)
+
 
 

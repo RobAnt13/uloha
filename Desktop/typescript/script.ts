@@ -1,23 +1,32 @@
-// Callback funkcia = funkcia ako parameter inej funkcie
+class House {
+    street: string
+    number: number
+    floors: number
 
+    constructor(str: string, num: number, flo: number){
+        this.street = str
+        this.number = num
+        this.floors = flo
+    }
 
-/*
-function y(nejakeCislo: number){
-    console.log(nejakeCislo)
-}
-*/
-
-
-const y = (nejakeCislo) => console.log(nejakeCislo)
-y(10)
-y(90)
-
-function sum(n1: number, n2: number, callBackFun: (n3: number) => void){
-    const result = n1 + n2
-    callBackFun(result)
 }
 
-sum(5, 30, (nejakeCislo) => console.log(nejakeCislo))
+const house1 = new House("Sevcenkova", 1, 4)
+const house2 = new House("Pekna", 5, 9)
+const house3 = new House("Skareda", 7, 3)
+
+console.log(house1.street)
+console.log(house2.street)
+console.log(house3.street)
+
+console.log(house1.number)
+console.log(house2.number)
+console.log(house3.number)
+
+console.log(house1.floors)
+console.log(house2.floors)
+console.log(house3.floors)
+
 
 
 

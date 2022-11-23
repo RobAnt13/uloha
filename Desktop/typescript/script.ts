@@ -1,31 +1,26 @@
-class House {
-    street: string
-    number: number
-    floors: number
+// OOP a metody
 
-    constructor(str: string, num: number, flo: number){
-        this.street = str
-        this.number = num
-        this.floors = flo
+class Department {
+    depName: string
+    number: number
+    
+    constructor(depN: string, nu: number){
+        this.depName = depN
+        this.number = nu
     }
 
+    describe() {
+        console.log("Oddelenie " + this.depName + " ma cislo " + this.number)
+    }
 }
 
-const house1 = new House("Sevcenkova", 1, 4)
-const house2 = new House("Pekna", 5, 9)
-const house3 = new House("Skareda", 7, 3)
+const HRdep = new Department("Human resources", 100)
+const MAdep = new Department("Marketing", 200)
+const FIdep = new Department("Finance", 300)
 
-console.log(house1.street)
-console.log(house2.street)
-console.log(house3.street)
-
-console.log(house1.number)
-console.log(house2.number)
-console.log(house3.number)
-
-console.log(house1.floors)
-console.log(house2.floors)
-console.log(house3.floors)
+HRdep.describe()
+MAdep.describe()
+FIdep.describe()
 
 
 

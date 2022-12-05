@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+
+.mybtn {
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: rgb(137, 52, 218);
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.mybtn:hover {
+    background: rgb(165, 86, 240);
+}
